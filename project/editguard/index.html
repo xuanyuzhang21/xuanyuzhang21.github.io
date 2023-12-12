@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="EditGuard: Versatile Image Watermarking for Tamper Localization and Copyright Protection">
+  <meta name="keywords" content="AIGC, watermarking">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EditGuard: Versatile Image Watermarking for Tamper Localization and Copyright Protection</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/xuanyuzhang21/EditGuard">
+      <!-- <span class="icon">
+          <i class="fas fa-home"></i>
+      </span> -->
+      </a>
+
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          <!-- More Research -->
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/xuanyuzhang21/EditGuard">
+            EditGuard: Versatile Image Watermarking for Tamper Localization and Copyright Protection
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">EditGuard: Versatile Image Watermarking for Tamper Localization and Copyright Protection<br>
+            <small>
+            </small>
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=Sq2q-E8AAAAJ">Xuanyu Zhang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              Runyi Li</a><sup>1</sup>,</span>
+            <span class="author-block">
+              Jiwen Yu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              Youmin Xu</a><sup>1, 2</sup>,</span>
+            <span class="author-block">
+              Weiqi Li</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.jianzhang.tech/">Jian Zhang</a><sup>1, *</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup> School of Electronic and Computer Engineering, Peking University Shenzhen Graduate School</span><br>
+            <span class="author-block"><sup>2</sup> Peng Cheng Laboratory </span><br>
+            <span class="author-block"><sup>*</sup> Corresponding author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://github.com/xuanyuzhang21/EditGuard"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!--/ PDF Link. -->
+              <!-- Code Link. -->
+              <span class="tooltip">
+              <span class="link-block">
+                <a href="https://github.com/xuanyuzhang21/EditGuard"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              <!--/ Code Link. -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Figure_1. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div style="text-align: center;">
+          <img src="assets/fig_1.png" alt="Figure 1"  width="100%"/>
+        </div>
+      </div>
+    </div>
+    <!--/ Figure_1. -->
+    
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In the era where AI-generated content (AIGC) models can produce stunning and lifelike images, the lingering shadow of unauthorized reproductions and malicious tampering poses imminent threats to copyright integrity and information security. 
+            Current image watermarking methods, while widely accepted for safeguarding visual content, can only protect copyright and ensure traceability. 
+            They fall short in localizing increasingly realistic image tampering, potentially leading to trust crises, privacy violations, and legal disputes. 
+            To solve this challenge, we propose an innovative proactive forensics framework EditGuard, to unify copyright protection and tamper-agnostic localization, especially for AIGC-based editing methods. 
+            It can offer a meticulous embedding of imperceptible watermarks and precise decoding of tampered areas and copyright information. 
+            Leveraging our observed fragility and locality of image-into-image steganography, the realization of EditGuard can be converted into a united image-bit steganography issue, thus completely decoupling the training process from the tampering types. 
+            Extensive experiments demonstrate that our EditGuard balances the tamper localization accuracy, copyright recovery precision, and generalizability to various AIGC-based tampering methods, especially for image forgery that is difficult for the naked eye to detect.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="column is-centered has-text-centered">
+      <h2 class="title is-3">Overall Framework of EditGuard</h2>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <section class="hero is-light is-small"> -->
+          <!-- <div class="hero-body"> -->
+            <!-- <div class="container"> -->
+                <div style="text-align: center;">
+                  <img src="assets/framework.png" alt="Figure 1"  width="100%"/>
+                </div>
+                <div class="content has-text-justified">
+                  <p>Illustration of the proposed proactive forensics framework <b>EditGuard</b>. The dual-watermark encoder sequentially embeds the pre-defined localization watermark and copyright watermark \( \mathbf{w}_{\text{cop}} \) into the original image \( \mathbf{I}_{\text{ori}} \), generating the container image \( \mathbf{I}_{\text{con}} \). After encountering potential malicious tampering and degradation during network transmission, tampered mask \( \hat{\mathbf{M}} \) and copyright information \( \hat{\mathbf{w}}_{\text{cop}} \) are respectively extracted via the tamper locator and copyright extractor from the received image \( \mathbf{I}_{\text{rec}} \).</p>
+                </div>
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </section> -->
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+    <div class="column is-centered has-text-centered">
+      <h2 class="title is-3">United Image-bit Steganography Network</h2>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <section class="hero is-light is-small"> -->
+          <!-- <div class="hero-body"> -->
+            <div class="container">
+                <div style="text-align: center;">
+                  <img src="assets/IBSN.png" alt="Figure 2"  width="100%"/>
+                </div>
+                <div class="content has-text-justified">
+                  <p>Illustration of the united Image-bit Steganography Network (IBSN). In the training process, we randomly sample original image \( \mathbf{I}_{\text{ori}} \), localization watermark \( \mathbf{W}_{\text{loc}} \) (a natural RGB image) and copyright watermark \( \mathbf{w}_{\text{cop}} \) and expect the IBSN to recover \( \hat{\mathbf{I}}_{\text{ori}} \), \( \hat{\mathbf{W}}_{\text{loc}} \) and \( \hat{\mathbf{w}}_{\text{cop}} \) with high fidelity. In the inference process, we use core components of the pre-trained IBSN with a mask extractor (ME) to construct our EditGuard, and pre-define a simple solid color image as a localization watermark.</p>
+            <!-- </div> -->
+          <!-- </div> -->
+        </section>
+      </div>
+    </div>
+
+    <div class="column is-centered has-text-centered">
+      <h2 class="title is-3">Results</h2>
+    </div>
+    <div class="container is-max-desktop">
+      <!-- Figure_1. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>Our EditGaurd can consistently achieve precise localization performance and copyright recovery accuracy on some careful editing with encapsulated editing software. However, almost none of the other methods can achieve comparable localization accuracy and generalization ability. More results can be found in our paper.</p>
+            </div>
+          <div style="text-align: center;">
+            <img src="assets/result.png" alt="Figure 1"  width="100%"/>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{luo2023copyrnerf,
+  author    = {Ziyuan Luo and Qing Guo and Ka Chun Cheung and Simon See and Renjie Wan},
+  title     = {Copy{RN}e{RF}: Protecting the CopyRight of Neural Radiance Fields},
+  booktitle   = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year      = {2023},
+}</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+<!--     <div class="content has-text-centered"> -->
+<!--       <a class="icon-link"
+         href="https://camera.pku.edu.cn/Publication.htm">
+        <i class="fas fa-file-pdf"></i>
+      </a> -->
+<!--       <a class="icon-link" href="https://github.com/luo-ziyuan" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+<!--     </div> -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. Some of the source code of this website is borrowed from <a href="https://nerfies.github.io">nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
