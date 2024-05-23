@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="V2A-Mark">
+  <meta name="keywords" content="AIGC, watermarking">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GS-Hider: Hiding Messages into 3D Gaussian Splatting</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          <!-- More Research -->
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="">
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">GS-Hider: Hiding Messages into 3D Gaussian Splatting<br>
+            <small>
+            </small>
+          </h1>
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=Sq2q-E8AAAAJ">Xuanyu Zhang</a><sup>1,2*</sup>,</span>
+            <span class="author-block">
+              Jiarui Meng</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              Runyi Li</a><sup>1</sup>,</span>
+            <span class="author-block">
+              Zhipei Xu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              Yongbing Zhang</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.jianzhang.tech/">Jian Zhang</a><sup>1,2&#9993</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup> School of Electronic and Computer Engineering, Peking University Shenzhen Graduate School</span><br>
+            <span class="author-block"><sup>2</sup> Peking University Shenzhen Graduate School-Rabbitpre AIGC Joint Research Laboratory</span><br>
+            <span class="author-block"><sup>3</sup> School of Computer Science and Technology, Harbin Institute of Technology (Shenzhen)</span><br>
+            <span class="author-block"><sup>*</sup> Equal contribution, <sup>&#9993</sup> Corresponding author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!--/ PDF Link. -->
+              <!-- Code Link. -->
+              <span class="tooltip">
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              <!--/ Code Link. -->
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <!-- Figure_1. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div style="text-align: center;">
+            <img src="assets/teasor.png" alt="Figure 1"  width="100%"/>
+          </div>
+        </div>
+      </div>
+      <!--/ Figure_1. -->
+      
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              3D Gaussian Splatting has already become the emerging research focus in the fields of 3D scene reconstruction and novel view synthesis. Given that training a 3DGS requires a significant amount of time and computational cost, it is crucial to protect the copyright, integrity, and privacy of such 3D assets. Steganography, as a crucial technique for encrypted transmission and copyright protection, has been extensively studied. However, it still lacks profound exploration targeted at 3DGS. Unlike its predecessor NeRF, 3DGS possesses two distinct features: 1) explicit 3D representation; and 2) real-time rendering speeds. These characteristics result in the 3DGS point cloud files being public and transparent, with each Gaussian point having a clear physical significance. Therefore, ensuring the security and fidelity of the original 3D scene while embedding information into the 3DGS point cloud files is an extremely challenging task. To solve the above-mentioned issue, we first propose a steganography framework for 3DGS, dubbed GS-Hider, which can embed 3D scenes and images into original GS point clouds in an invisible manner and accurately extract the hidden messages. Specifically, we design a coupled secured feature attribute to replace the original 3DGS's spherical harmonics coefficients and then use a scene decoder and a message decoder to disentangle the original RGB scene and the hidden message. Extensive experiments demonstrated that the proposed GS-Hider can effectively conceal multimodal messages without compromising rendering quality and possesses exceptional security, robustness, capacity, and flexibility.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-centered has-text-centered">
+        <h2 class="title is-3">Overall Framework of GS-Hider</h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div style="text-align: center;">
+            <img src="assets/framework.png" alt="Figure 1"  width="100%"/>
+          </div>
+          <div class="content has-text-justified">
+            <p>Overview framework of the proposed GS-Hider. It uses a coupled secured feature attribute \( \boldsymbol{f}_i \) and the rendering pipeline to fuse hidden and original information, obtaining a rendered coupled feature \( \mathbf{F}_{coup} \). Then, the scene and message decoder is adopted to decouple the rendered RGB scenes and hidden messages.</p>
+          </div>
+        </div>
+      </div>
+
+  <div class="container is-max-desktop">
+
+    <div class="column is-centered has-text-centered">
+      <div class="columns is-centered has-text-centered is-mobile">
+          <div class="container">
+              <div style="text-align: center;">
+                  <h2 class="title is-3">Hiding a Single Scene in a Single Scene</h2>
+                  <div class="columns is-mobile">
+                      <div class="column">
+                        <p>Original 3D Scene</p>
+                          <video id="1" autoplay controls muted loop playsinline style="height: 100%;">
+                              <source src="./static/videos/bicycle.mp4" type="video/mp4">
+                          </video>
+                      </div>
+
+                      <div class="column">
+                        <p>Recovered Hidden 3D Scene</p>
+                          <video id="2" autoplay controls muted loop playsinline style="height: 100%;">
+                              <source src="./static/videos/playroom1.mp4" type="video/mp4">
+                          </video>
+                      </div>
+                  </div>
+
+                  <div class="columns is-mobile">
+                    <div class="column">
+                        <video id="3" autoplay controls muted loop playsinline style="height: 100%;">
+                            <source src="./static/videos/kitchen.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="column">
+                        <video id="4" autoplay controls muted loop playsinline style="height: 100%;">
+                            <source src="./static/videos/bonsai.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <video id="5" autoplay controls muted loop playsinline style="height: 100%;">
+                            <source src="./static/videos/room.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="column">
+                        <video id="6" autoplay controls muted loop playsinline style="height: 100%;">
+                            <source src="./static/videos/garden.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="columns is-mobile">
+                  <div class="column">
+                      <video id="45" autoplay controls muted loop playsinline style="height: 100%;">
+                          <source src="./static/videos/garden1.mp4" type="video/mp4">
+                      </video>
+                  </div>
+
+                  <div class="column">
+                      <video id="46" autoplay controls muted loop playsinline style="height: 100%;">
+                          <source src="./static/videos/playroom3.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <section class="section">
+    <div class="column is-centered has-text-centered">
+      <div class="columns is-centered has-text-centered is-mobile">
+          <div class="container">
+                <div style="text-align: center;">
+                    <h2 class="title is-3">Hiding a Single Image in a Single Scene</h2>
+
+                    <div class="columns is-mobile">
+                        <div class="column">
+                          <p>Original 3D Scene</p>
+                            <video id="10" autoplay controls muted loop playsinline style="width: 100%;">
+                                <source src="./static/videos/stump.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="column">
+                            <p>Recovered Hidden 3D Scene</p>
+                              <video id="11" autoplay controls muted loop playsinline style="width: 100%;">
+                                  <source src="./static/videos/water.mp4" type="video/mp4">
+                              </video>
+                          </div>
+
+                          <div class="column">
+                            <p>Recovered Image at Fixed View</p>
+                            <img src="./static/videos/00087_water.png" alt="Figure 1"  style="width: 100%"/>
+                      </div>
+        
+                        </div>
+
+                        <div class="columns is-mobile">
+
+                        <div class="column">
+                            <video id="12" autoplay controls muted loop playsinline style="height: 100%;">
+                                <source src="./static/videos/kitchen1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="column">
+                              <video id="13" autoplay controls muted loop playsinline style="height: 100%;">
+                                  <source src="./static/videos/nips.mp4" type="video/mp4">
+                              </video>
+                          </div>
+
+                          <div class="column">
+                            <img src="./static/videos/nips.png" alt="Figure 1" style="height: 100%;"/>
+                      </div>
+
+                        </div>
+
+                        <div class="columns is-mobile">
+
+                          <div class="column">
+                              <video id="12" autoplay controls muted loop playsinline style="height: 100%;">
+                                  <source src="./static/videos/treehill.mp4" type="video/mp4">
+                              </video>
+                          </div>
+  
+                          <div class="column">
+                                <video id="13" autoplay controls muted loop playsinline style="height: 100%;">
+                                    <source src="./static/videos/treehill_hidden.mp4" type="video/mp4">
+                                </video>
+                            </div>
+  
+                            <div class="column">
+                              <img src="./static/videos/gshider.png" alt="Figure 1" style="height: 100%;"/>
+                        </div>
+  
+                          </div>
+
+                    </div>
+  
+  
+                </div>
+            </div>
+        </div>
+      </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+      
+          <div class="column is-centered has-text-centered">
+            <div class="columns is-centered has-text-centered is-mobile">
+                <div class="container">
+                    <div style="text-align: center;">
+                        <h2 class="title is-3">Hiding Multiple Scenes in a Single Scene</h2>
+                        <div class="columns is-mobile">
+                            <div class="column">
+                              <p>Original 3D Scene</p>
+                                <video id="15" autoplay controls muted loop playsinline style="height: 100%;">
+                                    <source src="./static/videos/output.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+                            <div class="column">
+                                <p>Hidden 3D Scene # 1</p>
+                                  <video id="15" autoplay controls muted loop playsinline style="height: 100%;">
+                                      <source src="./static/videos/output2.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+
+                              <div class="column">
+                                <p>Hidden 3D Scene # 2</p>
+                                  <video id="15" autoplay controls muted loop playsinline style="height: 100%;">
+                                      <source src="./static/videos/output3.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+      
+      
+                    </div>
+
+                    <div class="columns is-mobile">
+                      <div class="column">
+                          <video id="16" autoplay controls muted loop playsinline style="height: 100%;">
+                              <source src="./static/videos/garden2.mp4" type="video/mp4">
+                          </video>
+                      </div>
+
+                      <div class="column">
+                            <video id="17" autoplay controls muted loop playsinline style="height: 100%;">
+                                <source src="./static/videos/playroom2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="column">
+                            <video id="18" autoplay controls muted loop playsinline style="height: 100%;">
+                                <source src="./static/videos/bicycle1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+
+              </div>
+
+                </div>
+            </div>
+        </div>
+  
+
+
+  </div>
+
+  </div>
+</section>
+
+
+</body>
+</html>
