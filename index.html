@@ -49,20 +49,64 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+    <tr onmouseout="omniguard_stop()" onmouseover="omniguard_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+            <div class="two" id='omniguard_image'>
+              <img src='images/securegs.png' width="160"></div>
+            <img src='images/securegs.png' width="160">
+          </div>
+        <script type="text/javascript">
+          function omniguard_start() {
+            document.getElementById('omniguard_image').style.opacity = "1";
+          }
+
+          function omniguard_stop() {
+            document.getElementById('omniguard_image').style.opacity = "0";
+          }
+          omniguard_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">OmniGuard: Hybrid Manipulation Localization via Augmented Versatile Deep Image Watermarking
+          </span>
+        <!-- </a> -->
+        <br>
+		<strong>Xuanyu Zhang</strong>,
+		<a href="">Zecheng Tang</a>,
+		<a href="">Zhipei Xu</a>,
+		<a href="">Runyi Li</a>,
+		<a href="">Youmin Xu</a>,
+		<a href="">Bin Chen</a>, 
+		<a href="">Feng Gao</a>,
+    <a href="https://jianzhang.tech/">Jian Zhang</a>
+        <br>
+        <em>IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</em>, 2025
+        <br>
+        <a href="https://github.com/xuanyuzhang21/OmniGuard">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2412.01615">arXiv</a>
+        <p></p>
+        <p>
+        We propose OmniGuard, a novel augmented versatile watermarking approach that integrates proactive embedding with passive, blind extraction for robust copyright protection and tamper localization.
+      </td>
+    </tr>
+			  
     <tr onmouseout="securegs_stop()" onmouseover="securegs_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-            <div class="two" id='gshider_image'>
+            <div class="two" id='securegs_image'>
               <img src='images/securegs.png' width="160"></div>
             <img src='images/securegs.png' width="160">
           </div>
         <script type="text/javascript">
           function securegs_start() {
-            document.getElementById('gshider_image').style.opacity = "1";
+            document.getElementById('securegs_image').style.opacity = "1";
           }
 
           function securegs_stop() {
-            document.getElementById('gshider_image').style.opacity = "0";
+            document.getElementById('securegs_image').style.opacity = "0";
           }
           securegs_stop()
         </script>
@@ -87,7 +131,7 @@
         <a href="https://arxiv.org/abs/2503.06118">arXiv</a>
         <p></p>
         <p>
-        we propose a SecureGS, a secure and efficient 3DGS steganography framework inspired by Scaffold-GS's anchor point design and neural decoding.
+        We propose a SecureGS, a secure and efficient 3DGS steganography framework inspired by Scaffold-GS's anchor point design and neural decoding.
       </td>
     </tr>
 
