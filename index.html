@@ -50,6 +50,47 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+    <tr onmouseout="fakeshield_stop()" onmouseover="fakeshield_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+            <div class="two" id='fakeshield_image'>
+              <img src='images/fakeshield.png' width="160"></div>
+            <img src='images/fakeshield.png' width="160">
+          </div>
+        <script type="text/javascript">
+          function omniguard_start() {
+            document.getElementById('fakeshield_image').style.opacity = "1";
+          }
+
+          function omniguard_stop() {
+            document.getElementById('fakeshield_image').style.opacity = "0";
+          }
+          fakeshield_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">FakeShield: Explainable Image Forgery Detection and Localization via Multi-modal Large Language Models
+          </span>
+        <!-- </a> -->
+        <br>
+		<a href="">Zhipei Xu*</a>,
+		<strong>Xuanyu Zhang*<strong>,
+		<a href="">Runyi Li</a>,
+		<a href="">Zecheng Tang</a>,
+		<a href="">Qing Huang</a>,
+    <a href="https://jianzhang.tech/">Jian Zhang</a>
+        <br>
+        <em>International Conference on Learning Representations (ICLR)</em>, 2025
+        <br>
+        <a href="https://github.com/zhipeixu/FakeShield">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2410.02761">arXiv</a>
+        <p></p>
+        <p>
+        We propose the explainable IFDL task and design FakeShield, a multi-modal framework capable of evaluating image authenticity, generating tampered region masks, and providing a judgment basis based on pixel-level and image-level tampering clues.
+      </td>
+    </tr>
+			  
     <tr onmouseout="omniguard_stop()" onmouseover="omniguard_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -460,6 +501,7 @@
               </td>
               <td width="75%" valign="center">
 		<a href="">2023-2024 National Scholarship for Doctoral Students</a>
+		<br>
 		<a href="">2022-2023 Merit Student at Peking University</a>
 		<br>
 		<a href="">2020-2021 Tianjin Municipal People's Government Scholarship</a>
