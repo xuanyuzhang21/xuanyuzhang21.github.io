@@ -49,6 +49,88 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="vqinsight_stop()" onmouseover="vqinsight_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+            <div class="two" id='vqinsight_image'>
+              <img src='images/vqinsight.png' width="160"></div>
+            <img src='images/vqinsight.png' width="160">
+          </div>
+        <script type="text/javascript">
+          function vqinsight_start() {
+            document.getElementById('vqinsight_image').style.opacity = "1";
+          }
+
+          function vqinsight_stop() {
+            document.getElementById('vqinsight_image').style.opacity = "0";
+          }
+          vqinsight_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">VQ-Insight: Teaching VLMs for AI-Generated Video Quality Understanding via Progressive Visual Reinforcement Learning
+          </span>
+        <!-- </a> -->
+        <br>
+		<strong>Xuanyu Zhang</strong>,
+		<a href="">Weiqi Li</a>,
+		<a href="">Shijie Zhao</a>,
+		<a href="">Junlin Li</a>,
+		<a href="">Li Zhang</a>
+    <a href="https://jianzhang.tech/">Jian Zhang</a>
+        <br>
+        <em>Arxiv</em>, 2025
+        <br>
+        <a href="https://github.com/bytedance/Q-Insight">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2506.18564">arXiv</a>
+        <p></p>
+        <p>
+        We propose VQ-Insight, a novel reasoning-style VLM framework for AIGC video quality assessment. Our approach features: (1) a progressive video quality learning scheme that combines image quality warm-up, general task-specific temporal learning, and joint optimization with the video generation model; (2) the design of multi-dimension scoring rewards, preference comparison rewards, and temporal modeling rewards to enhance both generalization and specialization in video quality evaluation.
+      </td>
+    </tr>
+			  
+    <tr onmouseout="qinsight_stop()" onmouseover="qinsight_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+            <div class="two" id='qinsight_image'>
+              <img src='images/qinsight.png' width="160"></div>
+            <img src='images/qinsight.png' width="160">
+          </div>
+        <script type="text/javascript">
+          function qinsight_start() {
+            document.getElementById('qinsight_image').style.opacity = "1";
+          }
+
+          function qinsight_stop() {
+            document.getElementById('qinsight_image').style.opacity = "0";
+          }
+          qinsight_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">Q-Insight: Understanding Image Quality via Visual Reinforcement Learning
+          </span>
+        <!-- </a> -->
+        <br>
+		<a href="">Weiqi Li</a>,
+		<strong>Xuanyu Zhang</strong>,
+		<a href="">Shijie Zhao</a>,
+		<a href="">Yabin Zhang</a>,
+		<a href="">Junlin Li</a>,
+		<a href="">Li Zhang</a>
+    <a href="https://jianzhang.tech/">Jian Zhang</a>
+        <br>
+        <em>Arxiv</em>, 2025
+        <br>
+        <a href="https://github.com/bytedance/Q-Insight">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2503.22679">arXiv</a>
+        <p></p>
+        <p>
+        We propose Q-Insight, a reinforcement learning-based model built upon group relative policy optimization (GRPO), which demonstrates strong visual reasoning capability for image quality understanding while requiring only a limited amount of rating scores and degradation labels.
+      </td>
+    </tr>
 
     <tr onmouseout="fakeshield_stop()" onmouseover="fakeshield_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
