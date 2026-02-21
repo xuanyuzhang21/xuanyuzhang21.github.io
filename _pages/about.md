@@ -28,13 +28,15 @@ My recent research interests include MLLM, Visual Reinforcement Learning, AIGC, 
 - *2025.11*: &nbsp;🎉🎉 One paper is accepted as AAAI 2026 Oral.
 
 # 📝 Publications 
+(# denotes equal contribution)
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026 Oral</div><img src='images/rali.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Reasoning as Representation: Rethinking Visual Reinforcement Learning in Image Quality Assessment](https://arxiv.org/abs/2510.11369)
 
-Shijie Zhao#, **Xuanyu Zhang#**, Weiqi Li, Junlin Li, Li Zhang, Tianfan Xue, Jian Zhang (# denotes equal contribution) <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICLR 2026 Oral</span> \\
+Shijie Zhao#, **Xuanyu Zhang#**, Weiqi Li, Junlin Li, Li Zhang, Tianfan Xue, Jian Zhang \\
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICLR 2026 Oral</span> \\
 [**Paper**](https://arxiv.org/abs/2510.11369) | [**Code**](https://github.com/xuanyuzhang21/RALI) \\
 We revisit the reasoning mechanism in MLLM-based IQA model and propose a CLIP-based lightweight image scorer RALI. We verifies that through RL training, MLLMs leverage their reasoning capability to convert redundant visual representations into compact, cross-domain aligned text representations. This conversion is the source of the generalization exhibited by these reasoning-based IQA models. RALI uses only about 4% of Q-Insight’s parameters and inference time, while achieving comparable accuracy.
 </div>
@@ -46,7 +48,8 @@ We revisit the reasoning mechanism in MLLM-based IQA model and propose a CLIP-ba
 
 [VQ-Insight: Teaching VLMs for AI-Generated Video Quality Understanding via Progressive Visual Reinforcement Learning](https://arxiv.org/abs/2506.18564)
 
-**Xuanyu Zhang**, Weiqi Li, Shijie Zhao, Junlin Li, Li Zhang, Jian Zhang <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">AAAI 2026 Oral</span> \\
+**Xuanyu Zhang**, Weiqi Li, Shijie Zhao, Junlin Li, Li Zhang, Jian Zhang \\ 
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">AAAI 2026 Oral</span> \\
 [**Paper**](https://arxiv.org/pdf/2506.18564) | [**Code**](https://github.com/xuanyuzhang21/VQ-Insight) \\
 We propose VQ-Insight, a novel reasoning-style VLM framework for AIGC video quality assessment. Our approach features: (1) a progressive video quality learning scheme; (2) the design of multi-dimension scoring rewards, preference comparison rewards, and temporal modeling rewards.
 
@@ -70,7 +73,8 @@ We propose Q-Insight, a reinforcement learning-based model built upon group rela
 
 [FakeShield: Explainable Image Forgery Detection and Localization via Multi-modal Large Language Models](https://openreview.net/pdf?id=pAQzEY7M03)
 
-Zhipei Xu#, **Xuanyu Zhang#**, Runyi Li, Zecheng Tang, Qing Huang, Jian Zhang <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICLR 2025</span>  \\
+Zhipei Xu#, **Xuanyu Zhang#**, Runyi Li, Zecheng Tang, Qing Huang, Jian Zhang \\
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICLR 2025</span>  \\
 [**Project**](https://zhipeixu.github.io/projects/FakeShield/) | [**Code** ![](https://img.shields.io/github/stars/zhipeixu/FakeShield?style=social)](https://github.com/zhipeixu/FakeShield) <strong><span class='show_paper_citations' data='504N5M0AAAAJ:f2IySw72cVMC'></span></strong>\\
 We propose the explainable IFDL task and design FakeShield, a multi-modal framework capable of evaluating image authenticity, generating tampered region masks, and providing a judgment basis based on pixel-level and image-level tampering clues.
 </div>
@@ -81,7 +85,8 @@ We propose the explainable IFDL task and design FakeShield, a multi-modal framew
 
 [OmniGuard: Hybrid Manipulation Localization via Augmented Versatile Deep Image Watermarking](https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_OmniGuard_Hybrid_Manipulation_Localization_via_Augmented_Versatile_Deep_Image_Watermarking_CVPR_2025_paper.pdf)
 
-Xuanyu Zhang, Zecheng Tang, Zhipei Xu, Runyi Li, Youmin Xu, Bin Chen, Feng Gao, Jian Zhang <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">CVPR 2025</span>  \\
+Xuanyu Zhang, Zecheng Tang, Zhipei Xu, Runyi Li, Youmin Xu, Bin Chen, Feng Gao, Jian Zhang \\
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">CVPR 2025</span>  \\
 [**Paper**](https://arxiv.org/abs/2412.01615) | [**Code**](https://github.com/xuanyuzhang21/OmniGuard)\\
 We propose OmniGuard, a novel augmented versatile watermarking approach that integrates proactive embedding with passive, blind extraction for robust copyright protection and tamper localization.
 </div>
@@ -92,7 +97,8 @@ We propose OmniGuard, a novel augmented versatile watermarking approach that int
 
 [GS-Hider: Hiding Messages into 3D Gaussian Splatting](https://proceedings.neurips.cc/paper_files/paper/2024/file/59091e8226128dfad5f1d75a58f18906-Paper-Conference.pdf)
 
-Xuanyu Zhang, Jiarui Meng, Runyi Li, Zhipei Xu, Yongbing Zhang, Jian Zhang <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">NeurIPS 2024</span>  \\
+Xuanyu Zhang, Jiarui Meng, Runyi Li, Zhipei Xu, Yongbing Zhang, Jian Zhang \\
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">NeurIPS 2024</span>  \\
 [**Paper**](https://arxiv.org/abs/2405.15118) | [**Code**](https://github.com/xuanyuzhang21/GS-Hider)\\
 We propose the **first** 3DGS steganography framework GS-Hider, which can hide an entire 3D scene or an image into the original 3D scene and accurately decode it from 3D Gaussians.
 </div>
@@ -103,7 +109,8 @@ We propose the **first** 3DGS steganography framework GS-Hider, which can hide a
 
 [EditGuard: Versatile Image Watermarking for Tamper Localization and Copyright Protection](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_EditGuard_Versatile_Image_Watermarking_for_Tamper_Localization_and_Copyright_Protection_CVPR_2024_paper.pdf)
 
-Xuanyu Zhang, Runyi Li, Jiwen Yu, Youmin Xu, Weiqi Li, Jian Zhang <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">CVPR 2024</span>  \\
+Xuanyu Zhang, Runyi Li, Jiwen Yu, Youmin Xu, Weiqi Li, Jian Zhang \\
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">CVPR 2024</span>  \\
 [**Paper**](https://arxiv.org/pdf/2312.08883) | [**Code**](https://github.com/xuanyuzhang21/EditGuard)\\
 We propose a versatile deep forensic watermark for AIGC editing methods, such as stable diffusion inpaint, controlnet, SDXL and etc.
 </div>
