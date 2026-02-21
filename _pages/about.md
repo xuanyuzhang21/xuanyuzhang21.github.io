@@ -32,7 +32,7 @@ My recent research interests include MLLM, Reinforcement learning in visual unde
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026 Oral</div><img src='images/rali.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Reasoning as Representation: Rethinking Visual Reinforcement Learning in Image Quality Assessment](https://openreview.net/pdf/b992d6fc0f8977fb0fdb50f4c71a79490fde51e5.pdf)
+[Reasoning as Representation: Rethinking Visual Reinforcement Learning in Image Quality Assessment](https://arxiv.org/abs/2510.11369)
 
 Shijie Zhao#, **Xuanyu Zhang#**, Weiqi Li, Junlin Li, Li Zhang, Tianfan Xue, Jian Zhang (# denotes equal contribution)
 
