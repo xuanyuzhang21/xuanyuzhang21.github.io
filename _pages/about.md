@@ -48,7 +48,7 @@ We revisit the reasoning mechanism in MLLM-based IQA model and propose a CLIP-ba
 
 [VQ-Insight: Teaching VLMs for AI-Generated Video Quality Understanding via Progressive Visual Reinforcement Learning](https://arxiv.org/abs/2506.18564)
 
-**Xuanyu Zhang**, Weiqi Li, Shijie Zhao, Junlin Li, Li Zhang, Jian Zhang \\ 
+**Xuanyu Zhang**, Weiqi Li, Shijie Zhao, Junlin Li, Li Zhang, Jian Zhang \\
 <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">AAAI 2026 Oral</span> \\
 [**Paper**](https://arxiv.org/pdf/2506.18564) | [**Code**](https://github.com/xuanyuzhang21/VQ-Insight) \\
 We propose VQ-Insight, a novel reasoning-style VLM framework for AIGC video quality assessment. Our approach features: (1) a progressive video quality learning scheme; (2) the design of multi-dimension scoring rewards, preference comparison rewards, and temporal modeling rewards.
@@ -61,7 +61,8 @@ We propose VQ-Insight, a novel reasoning-style VLM framework for AIGC video qual
 
 [Q-Insight: Understanding Image Quality via Visual Reinforcement Learning](https://arxiv.org/abs/2503.22679)
 
-Weiqi Li, **Xuanyu Zhang**, Shijie Zhao, Yabin Zhang, Junlin Li, Li Zhang and Jian Zhang <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">NeurIPS 2025 Spotlight</span> \\
+Weiqi Li, **Xuanyu Zhang**, Shijie Zhao, Yabin Zhang, Junlin Li, Li Zhang and Jian Zhang \\
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">NeurIPS 2025 Spotlight</span> \\
 [**Paper**](https://arxiv.org/abs/2503.22679) | [**Code**](https://github.com/bytedance/Q-Insight) \\
 We propose Q-Insight, a reinforcement learning-based model built upon group relative policy optimization (GRPO), which demonstrates strong visual reasoning capability for image quality understanding while requiring only a limited amount of rating scores and degradation labels.
 
@@ -75,7 +76,7 @@ We propose Q-Insight, a reinforcement learning-based model built upon group rela
 
 Zhipei Xu#, **Xuanyu Zhang#**, Runyi Li, Zecheng Tang, Qing Huang, Jian Zhang \\
 <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICLR 2025</span>  \\
-[**Project**](https://zhipeixu.github.io/projects/FakeShield/) | [**Code** ![](https://img.shields.io/github/stars/zhipeixu/FakeShield?style=social)](https://github.com/zhipeixu/FakeShield) <strong><span class='show_paper_citations' data='504N5M0AAAAJ:f2IySw72cVMC'></span></strong>\\
+[**Project**](https://zhipeixu.github.io/projects/FakeShield/) | [**Code** ![](https://img.shields.io/github/stars/zhipeixu/FakeShield?style=social)](https://github.com/zhipeixu/FakeShield)\\
 We propose the explainable IFDL task and design FakeShield, a multi-modal framework capable of evaluating image authenticity, generating tampered region masks, and providing a judgment basis based on pixel-level and image-level tampering clues.
 </div>
 </div>
@@ -92,7 +93,7 @@ We propose OmniGuard, a novel augmented versatile watermarking approach that int
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/gshider.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/gshider.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [GS-Hider: Hiding Messages into 3D Gaussian Splatting](https://proceedings.neurips.cc/paper_files/paper/2024/file/59091e8226128dfad5f1d75a58f18906-Paper-Conference.pdf)
