@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am Xuanyu Zhang (张轩宇), a Master's student at the School of Computer Science, Peking University, advised by Prof. [Jian Zhang](https://scholar.google.com/citations?hl=zh-CN&user=7brFI_4AAAAJ). Previously, I received my B.Eng degree from Tianjin University, advised by Prof. [Jianjun Lei](https://scholar.google.com/citations?user=z_qd4pwAAAAJ&hl=zh-CN&oi=ao), [Pengfei Zhu](https://scholar.google.com/citations?user=iS27HZ8AAAAJ&hl=zh-CN&oi=ao), and [Bo Peng](https://scholar.google.com/citations?user=a8vwUikAAAAJ&hl=zh-CN&oi=ao).
+I am Xuanyu Zhang (张轩宇), a Ph.D. Student at the School of Computer Science, Peking University, advised by Prof. [Jian Zhang](https://scholar.google.com/citations?hl=zh-CN&user=7brFI_4AAAAJ). Previously, I received my B.Eng degree from Tianjin University, advised by Prof. [Jianjun Lei](https://scholar.google.com/citations?user=z_qd4pwAAAAJ&hl=zh-CN&oi=ao), [Pengfei Zhu](https://scholar.google.com/citations?user=iS27HZ8AAAAJ&hl=zh-CN&oi=ao), and [Bo Peng](https://scholar.google.com/citations?user=a8vwUikAAAAJ&hl=zh-CN&oi=ao).
 
 My recent research interests include MLLM, Reinforcement learning in visual understanding and generation, Reward Model, and Trustworthy AI. 
 
@@ -28,19 +28,18 @@ My recent research interests include MLLM, Reinforcement learning in visual unde
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026 Oral</div><img src='images/vqinsight.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[VQ-Insight: Teaching VLMs for AI-Generated Video Quality Understanding via Progressive Visual Reinforcement Learning](https://arxiv.org/abs/2506.18564)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Xuanyu Zhang**, Weiqi Li, Shijie Zhao, Junlin Li, Li Zhang, Jian Zhang
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Paper**](https://arxiv.org/pdf/2506.18564) | [**Code**](https://github.com/xuanyuzhang21/VQ-Insight) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+- We propose VQ-Insight, a novel reasoning-style VLM framework for AIGC video quality assessment. Our approach features: (1) a progressive video quality learning scheme; (2) the design of multi-dimension scoring rewards, preference comparison rewards, and temporal modeling rewards.
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
