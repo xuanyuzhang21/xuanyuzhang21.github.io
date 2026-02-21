@@ -35,7 +35,7 @@ My recent research interests include MLLM, Reinforcement learning in visual unde
 
 Shijie Zhao#, **Xuanyu Zhang#**, Weiqi Li, Junlin Li, Li Zhang, Tianfan Xue, Jian Zhang (# denotes equal contribution)
 
-[**Paper**](https://arxiv.org/abs/2510.11369) **|** [**Code**](https://github.com/xuanyuzhang21/RALI) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2510.11369) **|** [**Code**](https://github.com/xuanyuzhang21/RALI)
 
 <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICLR 2026 Oral</span>
 
@@ -52,7 +52,7 @@ Shijie Zhao#, **Xuanyu Zhang#**, Weiqi Li, Junlin Li, Li Zhang, Tianfan Xue, Jia
 
 **Xuanyu Zhang**, Weiqi Li, Shijie Zhao, Junlin Li, Li Zhang, Jian Zhang
 
-[**Paper**](https://arxiv.org/pdf/2506.18564) **|** [**Code**](https://github.com/xuanyuzhang21/VQ-Insight) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/pdf/2506.18564) **|** [**Code**](https://github.com/xuanyuzhang21/VQ-Insight)
 
 <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">AAAI 2026 Oral</span>
 
@@ -68,7 +68,7 @@ Shijie Zhao#, **Xuanyu Zhang#**, Weiqi Li, Junlin Li, Li Zhang, Tianfan Xue, Jia
 
 Weiqi Li, **Xuanyu Zhang**, Shijie Zhao, Yabin Zhang, Junlin Li, Li Zhang and Jian Zhang
 
-[**Paper**](https://arxiv.org/abs/2503.22679) | [**Code**](https://github.com/bytedance/Q-Insight) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2503.22679) **|** [**Code**](https://github.com/bytedance/Q-Insight)
 
 <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">NeurIPS 2025 Spotlight</span>
 
