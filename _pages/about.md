@@ -28,7 +28,7 @@ My recent research interests include MLLM, Reinforcement learning in visual unde
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026 Oral</div><img src='images/teaser_rali.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026 Oral</div><img src='images/rali.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Reasoning as Representation: Rethinking Visual Reinforcement Learning in Image Quality Assessment](https://openreview.net/pdf/b992d6fc0f8977fb0fdb50f4c71a79490fde51e5.pdf)
@@ -45,7 +45,7 @@ Shijie Zhao#, **Xuanyu Zhang#**, Weiqi Li, Junlin Li, Li Zhang, Tianfan Xue, Jia
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026 Oral</div><img src='images/teaser_vqinsight.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026 Oral</div><img src='images/vqinsight.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [VQ-Insight: Teaching VLMs for AI-Generated Video Quality Understanding via Progressive Visual Reinforcement Learning](https://arxiv.org/abs/2506.18564)
@@ -61,7 +61,7 @@ Shijie Zhao#, **Xuanyu Zhang#**, Weiqi Li, Junlin Li, Li Zhang, Tianfan Xue, Jia
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025 Spotlight</div><img src='images/teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025 Spotlight</div><img src='images/qinsight.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Q-Insight: Understanding Image Quality via Visual Reinforcement Learning](https://arxiv.org/abs/2503.22679)
