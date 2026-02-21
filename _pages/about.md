@@ -19,7 +19,7 @@ redirect_from:
 
 I am **Xuanyu Zhang (张轩宇)**, a Ph.D. Student at the School of Computer Science, Peking University, advised by Prof. [Jian Zhang](https://scholar.google.com/citations?hl=zh-CN&user=7brFI_4AAAAJ). Previously, I received my B.Eng degree from School of Electrical and Information Engineering, Tianjin University, advised by Prof. [Jianjun Lei](https://scholar.google.com/citations?user=z_qd4pwAAAAJ&hl=zh-CN&oi=ao), [Pengfei Zhu](https://scholar.google.com/citations?user=iS27HZ8AAAAJ&hl=zh-CN&oi=ao), and [Bo Peng](https://scholar.google.com/citations?user=a8vwUikAAAAJ&hl=zh-CN&oi=ao). Please feel free to reach out via email (xuanyuzhang21@stu.pku.edu.cn).
 
-My recent research interests include MLLM, Reinforcement learning in visual understanding and generation, Reward Model, and Trustworthy AI. I have published **10+** CCF-A papers at top-tier venues including CVPR, NeurIPS, ICLR, AAAI, ACM MM and IJCV, with works spanning united visual understanding and generation, Image or video quality understanding, AIGC forgery localization, multi-agent frameworks, and robust watermarking/steganography for copyright protection. For more details on my publications, please visit my profiles on [Google Scholar](https://scholar.google.com/citations?user=Sq2q-E8AAAAJ&hl=zh-CN&oi=ao).
+My recent research interests include MLLM, Reinforcement learning in visual understanding and generation, Reward Model, and Trustworthy AI. I have published **10+** CCF-A papers (as the first/co-first author) with a total Google Scholar citations of **1000+** at top-tier venues including CVPR, NeurIPS, ICLR, AAAI, ACM MM and IJCV, with works spanning united visual understanding and generation, Image or video quality understanding, AIGC forgery localization, multi-agent frameworks, and robust watermarking/steganography for copyright protection. For more details on my publications, please visit my profiles on [Google Scholar](https://scholar.google.com/citations?user=Sq2q-E8AAAAJ&hl=zh-CN&oi=ao).
 
 
 # 🔥 News
@@ -34,13 +34,11 @@ My recent research interests include MLLM, Reinforcement learning in visual unde
 
 [Reasoning as Representation: Rethinking Visual Reinforcement Learning in Image Quality Assessment](https://arxiv.org/abs/2510.11369)
 
-Shijie Zhao#, **Xuanyu Zhang#**, Weiqi Li, Junlin Li, Li Zhang, Tianfan Xue, Jian Zhang (# denotes equal contribution)
+Shijie Zhao#, **Xuanyu Zhang#**, Weiqi Li, Junlin Li, Li Zhang, Tianfan Xue, Jian Zhang (# denotes equal contribution) <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICLR 2026 Oral</span>
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICLR 2026 Oral</span>
+[**Paper**](https://arxiv.org/abs/2510.11369) | [**Code**](https://github.com/xuanyuzhang21/RALI)
 
-[**Paper**](https://arxiv.org/abs/2510.11369) | [**Code**](https://github.com/xuanyuzhang21/RALI)<strong><span class='show_paper_citations' data='504N5M0AAAAJ:f2IySw72cVMC'></span></strong>
-
-We revisit the reasoning mechanism in MLLM-based IQA model and propose a CLIP-based lightweight image scorer RALI. We verifies that through RL training, MLLMs leverage their reasoning capability to convert redundant visual representations into compact, cross-domain aligned text representations. This conversion is the source of the generalization exhibited by these reasoning-based IQA models. RALI uses only about 4% of Q-Insight’s parameters and inference time, while achieving comparable accuracy.
+- We revisit the reasoning mechanism in MLLM-based IQA model and propose a CLIP-based lightweight image scorer RALI. We verifies that through RL training, MLLMs leverage their reasoning capability to convert redundant visual representations into compact, cross-domain aligned text representations. This conversion is the source of the generalization exhibited by these reasoning-based IQA models. RALI uses only about 4% of Q-Insight’s parameters and inference time, while achieving comparable accuracy.
 
 </div>
 </div>
@@ -53,9 +51,8 @@ We revisit the reasoning mechanism in MLLM-based IQA model and propose a CLIP-ba
 
 **Xuanyu Zhang**, Weiqi Li, Shijie Zhao, Junlin Li, Li Zhang, Jian Zhang <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">AAAI 2026 Oral</span>
 
-[**Paper**](https://arxiv.org/pdf/2506.18564) | [**Code**](https://github.com/xuanyuzhang21/VQ-Insight)<strong><span class='show_paper_citations' data='Sq2q-E8AAAAJ&hl=zh-CN&oi=ao'></span></strong>
-
-- We propose VQ-Insight, a novel reasoning-style VLM framework for AIGC video quality assessment. Our approach features: (1) a progressive video quality learning scheme; (2) the design of multi-dimension scoring rewards, preference comparison rewards, and temporal modeling rewards.
+[**Paper**](https://arxiv.org/pdf/2506.18564) | [**Code**](https://github.com/xuanyuzhang21/VQ-Insight)
+We propose VQ-Insight, a novel reasoning-style VLM framework for AIGC video quality assessment. Our approach features: (1) a progressive video quality learning scheme; (2) the design of multi-dimension scoring rewards, preference comparison rewards, and temporal modeling rewards.
 
 </div>
 </div>
@@ -67,22 +64,36 @@ We revisit the reasoning mechanism in MLLM-based IQA model and propose a CLIP-ba
 
 Weiqi Li, **Xuanyu Zhang**, Shijie Zhao, Yabin Zhang, Junlin Li, Li Zhang and Jian Zhang <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">NeurIPS 2025 Spotlight</span>
 
-[**Paper**](https://arxiv.org/abs/2503.22679) | [**Code**](https://github.com/bytedance/Q-Insight)<strong><span class='show_paper_citations' data='504N5M0AAAAJ:f2IySw72cVMC'></span></strong>
-
+[**Paper**](https://arxiv.org/abs/2503.22679) | [**Code**](https://github.com/bytedance/Q-Insight)
 We propose Q-Insight, a reinforcement learning-based model built upon group relative policy optimization (GRPO), which demonstrates strong visual reasoning capability for image quality understanding while requiring only a limited amount of rating scores and degradation labels.
 
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/fakeshield.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+[FakeShield: Explainable Image Forgery Detection and Localization via Multi-modal Large Language Models](https://openreview.net/pdf?id=pAQzEY7M03)
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+Zhipei Xu#, **Xuanyu Zhang#**, Runyi Li, Zecheng Tang, Qing Huang, Jian Zhang 
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/fakeshield.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Project**](https://zhipeixu.github.io/projects/FakeShield/) | [**Code** ![](https://img.shields.io/github/stars/zhipeixu/FakeShield?style=social)](https://github.com/zhipeixu/FakeShield) <strong><span class='show_paper_citations' data='504N5M0AAAAJ:f2IySw72cVMC'></span></strong>
+We propose the explainable IFDL task and design FakeShield, a multi-modal framework capable of evaluating image authenticity, generating tampered region masks, and providing a judgment basis based on pixel-level and image-level tampering clues.
+</div>
+</div>
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2025.04* - present, ByteDance, China.
+
+# 🎖 Honors and Awards
+- *2025.12* Merit Student at Peking University  
+- *2024.10* National Scholarship for Doctoral Students
+- *2022.10* National Scholarship for Undergraduate Students
+
+<!-- # 📖 Educations
+- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2015.09 - 2019.06*,  -->
+
