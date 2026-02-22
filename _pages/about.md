@@ -50,7 +50,7 @@ We revisit the reasoning mechanism in MLLM-based IQA model and propose a CLIP-ba
 
 **Xuanyu Zhang**, Weiqi Li, Shijie Zhao, Junlin Li, Li Zhang, Jian Zhang \\
 <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">AAAI 2026 Oral</span> \\
-[**Paper**](https://arxiv.org/pdf/2506.18564) | [**Code** ![](https://img.shields.io/github/stars/bytedance/Q-Insight?style=social)](https://github.com/xuanyuzhang21/VQ-Insight) | [**Model**](https://huggingface.co/ByteDance/Q-Insight) \\
+[**Paper**](https://arxiv.org/pdf/2506.18564) | [**Code** ![](https://img.shields.io/github/stars/bytedance/Q-Insight?style=social)](https://github.com/xuanyuzhang21/VQ-Insight) | [**Model**](https://huggingface.co/ByteDance/Q-Insight) | [**Social Media**](https://mp.weixin.qq.com/s?src=11&timestamp=1771737823&ver=6557&signature=wMzVVEnt1Mw9iRKMQTNVqcIWbvzJH32mDwuSbW3a4KXv8h6DHbU*TuDh3OQUrhOpdjcwpNd6nJ0Z1Mcpsca29hQB8erXL2gu-BfPCUK1fKOXa7UfpSZBgZJLG9Kk04AP&new=1) \\
 We propose VQ-Insight, a novel reasoning-style VLM framework for AIGC video quality assessment. Our approach features: (1) a progressive video quality learning scheme; (2) the design of multi-dimension scoring rewards, preference comparison rewards, and temporal modeling rewards.
 
 </div>
@@ -63,7 +63,7 @@ We propose VQ-Insight, a novel reasoning-style VLM framework for AIGC video qual
 
 Weiqi Li, **Xuanyu Zhang**, Shijie Zhao, Yabin Zhang, Junlin Li, Li Zhang and Jian Zhang \\
 <span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">NeurIPS 2025 Spotlight</span> \\
-[**Paper**](https://arxiv.org/abs/2503.22679) | [**Code** ![](https://img.shields.io/github/stars/bytedance/Q-Insight?style=social)](https://github.com/bytedance/Q-Insight) | [**Model**](https://huggingface.co/ByteDance/Q-Insight) \\
+[**Paper**](https://arxiv.org/abs/2503.22679) | [**Code** ![](https://img.shields.io/github/stars/bytedance/Q-Insight?style=social)](https://github.com/bytedance/Q-Insight) | [**Model**](https://huggingface.co/ByteDance/Q-Insight) ｜ [**Social Media**](https://cj.sina.com.cn/articles/view/3996876140/ee3b7d6c001014l4e?froms=ggmp) \\
 We propose Q-Insight, a reinforcement learning-based model built upon group relative policy optimization (GRPO), which demonstrates strong visual reasoning capability for image quality understanding while requiring only a limited amount of rating scores and degradation labels.
 
 </div>
