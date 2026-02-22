@@ -121,12 +121,12 @@ We propose a versatile deep forensic watermark for AIGC editing methods, such as
 - *2025.04* - present, ByteDance, China.
 
 # 🎖 Honors and Awards
-- *2025.12* Merit Student at Peking University  
+- *2023 - 2025* Outstanding Student Award at Peking University
 - *2024.10* National Scholarship for Doctoral Students
 - *2022.10* National Scholarship for Undergraduate Students
 
 # 📖 Educations
 - *2022.09 - 2027.06 (expected)*, Ph.D., Computer Science, Peking University
-- *2018.09 - 2022.06*, B.E., Computer Science (Second Degree), Tianjin University
-- *2018.09 - 2022.06*, B.E., Communication Engineering, Tianjin University
+- *2018.09 - 2022.06*, B.Eng, Computer Science (Second Degree), Tianjin University
+- *2018.09 - 2022.06*, B.Eng, Communication Engineering, Tianjin University
 
