@@ -81,6 +81,18 @@ We propose the explainable IFDL task and design FakeShield, a multi-modal framew
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/securegs.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[SecureGS: Boosting the Security and Fidelity of 3D Gaussian Splatting Steganography](https://arxiv.org/abs/2503.06118)
+
+**Xuanyu Zhang**, Jiarui Meng, Zhipei Xu, Shuzhou Yang, Yanmin Wu, Ronggang Wang, Jian Zhang \\
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICLR 2025</span>  \\
+[**Paper**](https://arxiv.org/abs/2503.06118) | [**Code**](https://github.com/xuanyuzhang21/GS-Hider)\\
+We propose a SecureGS, a secure and efficient 3DGS steganography framework inspired by Scaffold-GS's anchor point design and neural decoding.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/omniguard.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
