@@ -27,7 +27,7 @@ My recent research interests include MLLM, Visual Reinforcement Learning, AIGC, 
 - *2026.01*: &nbsp;🎉🎉 Two papers are accepted at ICLR 2026.
 - *2025.11*: &nbsp;🎉🎉 One paper is accepted as AAAI 2026 Oral.
 
-# 📝 Publications 
+# 📝 Selected Publications 
 (# denotes equal contribution)
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026 Oral</div><img src='images/rali.png' alt="sym" width="100%"></div></div>
